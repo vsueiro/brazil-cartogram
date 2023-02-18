@@ -4,7 +4,7 @@
 
 Generate a map of Brazil where all states have the same area – which helps people perceive choropletic maps (maps with colored states) more precisely.
 
-Add your own data (a number value for each state), change the color palette, and download the map as an editable SVG file.
+Add your own data (a numberical value for each state), change the color palette, and download the map as an editable SVG file.
 
 This browser-based tool is intended for data journalists, designers and data visualization practitioners.
 
