@@ -1,0 +1,31 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="elliptical">
+<circle id="TO" cx="270.206" cy="250" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="SP" cx="443.413" cy="550" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="SE" cx="616.62" cy="350" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="SC" cx="443.413" cy="650" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="RS" cx="356.809" cy="700" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="RR" cx="183.603" cy="100" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="RO" cx="183.603" cy="300" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="RN" cx="530.014" cy="200" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="RJ" cx="530.02" cy="500" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="PR" cx="530.022" cy="600" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="PI" cx="443.413" cy="350" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="PE" cx="530.016" cy="300" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="PB" cx="616.62" cy="250" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="PA" cx="270.206" cy="150" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="MT" cx="270.207" cy="350" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="MS" cx="356.809" cy="500" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="MG" cx="443.413" cy="450" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="MA" cx="356.809" cy="200" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="GO" cx="356.809" cy="400" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="ES" cx="616.62" cy="450" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="DF" cx="356.809" cy="300" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="CE" cx="443.413" cy="250" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="BA" cx="530.018" cy="400" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="AP" cx="356.809" cy="100" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="AM" cx="183.603" cy="200" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="AL" cx="703.22" cy="300" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<circle id="AC" cx="97" cy="250" r="50" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+</g>
+</svg>

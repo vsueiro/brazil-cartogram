@@ -1,0 +1,31 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="hexagonal">
+<path id="TO" d="M241.074 300L212.207 250L241.074 200L298.809 200L327.677 250L298.809 300H241.074Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="SP" d="M414.279 600L385.412 550L414.279 500L472.014 500L500.882 550L472.014 600H414.279Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="SE" d="M587.487 400L558.619 350L587.487 300L645.222 300L674.089 350L645.222 400H587.487Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="SC" d="M414.279 700L385.412 650L414.279 600L472.014 600L500.882 650L472.014 700H414.279Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="RS" d="M327.675 750L298.808 700L327.675 650L385.41 650L414.278 700L385.41 750H327.675Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="RR" d="M154.47 150L125.603 100L154.47 50L212.205 50L241.073 100L212.205 150H154.47Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="RO" d="M154.47 350L125.603 300L154.47 250L212.205 250L241.073 300L212.205 350H154.47Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="RN" d="M500.883 250L472.016 200L500.883 150L558.618 150L587.486 200L558.618 250H500.883Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="RJ" d="M500.882 550L472.015 500L500.882 450L558.617 450L587.485 500L558.617 550H500.882Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="PR" d="M500.882 650L472.015 600L500.882 550L558.617 550L587.485 600L558.617 650H500.882Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="PI" d="M414.281 400L385.413 350L414.281 300L472.016 300L500.883 350L472.016 400H414.281Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="PE" d="M500.883 350L472.016 300L500.883 250L558.618 250L587.486 300L558.618 350H500.883Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="PB" d="M587.487 300L558.619 250L587.487 200L645.222 200L674.089 250L645.222 300H587.487Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="PA" d="M241.074 200L212.206 150L241.074 100L298.809 100L327.676 150L298.809 200H241.074Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="MT" d="M241.074 400L212.207 350L241.074 300L298.809 300L327.677 350L298.809 400H241.074Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="MS" d="M327.675 550L298.808 500L327.675 450L385.41 450L414.278 500L385.41 550H327.675Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="MG" d="M414.279 500L385.411 450L414.279 400L472.014 400L500.881 450L472.014 500H414.279Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="MA" d="M327.677 250L298.809 200L327.677 150L385.412 150L414.279 200L385.412 250H327.677Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="GO" d="M327.675 450L298.808 400L327.675 350L385.41 350L414.278 400L385.41 450H327.675Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="ES" d="M587.486 500L558.618 450L587.486 400L645.221 400L674.088 450L645.221 500H587.486Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="DF" d="M327.677 350L298.809 300L327.677 250L385.412 250L414.279 300L385.412 350H327.677Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="CE" d="M414.281 300L385.413 250L414.281 200L472.016 200L500.883 250L472.016 300H414.281Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="BA" d="M500.881 450L472.014 400L500.881 350L558.616 350L587.484 400L558.616 450H500.881Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="AP" d="M327.677 150L298.809 100L327.677 50L385.412 50L414.279 100L385.412 150H327.677Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="AM" d="M154.47 250L125.603 200L154.47 150L212.205 150L241.073 200L212.205 250H154.47Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="AL" d="M674.089 350L645.222 300L674.089 250L731.824 250L760.692 300L731.824 350H674.089Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="AC" d="M67.8675 300L39 250L67.8676 200L125.603 200L154.47 250L125.603 300H67.8675Z" fill="#CCCCCC" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+</g>
+</svg>
