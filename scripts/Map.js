@@ -196,6 +196,7 @@ class Map {
       const isLight = this.color.isLight(color);
 
       // Add text label
+      // TODO: fix svg selector to work even is multiple <svg> elements exist on page
       d3.select("svg")
         .append("text")
         .attr("x", x)
@@ -216,9 +217,6 @@ class Map {
     // Insert SVG into parent element
     this.element.innerHTML = template;
 
-    // Store refence to parsed <svg> element
-    this.svg = this.element.querySelector("svg");
-
     // Store each path or circle as a state
     this.states = this.element.querySelectorAll("path[id],circle[id]");
 
@@ -227,6 +225,32 @@ class Map {
 
     // Add state labels
     this.label();
+  }
+
+  download() {
+    // Create temporary <a> element
+    const a = document.createElement("a");
+
+    // Define filename
+    const filename = `${this.options.shape}-map-of-brazil`;
+
+    // Get SVG as a string
+    const svg = this.element.innerHTML.toString();
+
+    // Convert HTML element to blob
+    const blob = new Blob([svg]);
+
+    // Convert SVG to URL
+    a.href = window.URL.createObjectURL(blob);
+
+    // Build download attribule
+    a.download = `${filename}.svg`;
+
+    // Simulate click on <a> element, to trigger download
+    a.click();
+
+    // Discard <a> element
+    a.remove();
   }
 }
 
