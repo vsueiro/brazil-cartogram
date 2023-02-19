@@ -1,6 +1,6 @@
 class Color {
-  constructor() {
-    console.log("created instace of Color");
+  constructor(d3) {
+    this.d3 = d3;
   }
 }
 

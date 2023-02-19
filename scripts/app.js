@@ -5,5 +5,8 @@ import Data from "./Data.js";
 import Map from "./Map.js";
 import Color from "./Color.js";
 
-const map = new Map(".map");
+const color = new Color(d3);
+const map = new Map(".map", color);
 const form = new Form(".form", map);
+
+console.log(form);

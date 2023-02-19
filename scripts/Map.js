@@ -1,5 +1,5 @@
 class Map {
-  constructor(map, options) {
+  constructor(map, color, options) {
     // Store reference to the <div> element
     this.element = map;
 
@@ -7,6 +7,9 @@ class Map {
     if (typeof map === "string") {
       this.element = document.querySelector(map);
     }
+
+    // Store reference to Color instance
+    this.color = color;
 
     // Define default values
     const defaults = {
@@ -60,6 +63,18 @@ class Map {
   draw(template) {
     // Insert SVG into parent element
     this.element.innerHTML = template;
+
+    // Store each path or circle as a state
+    this.states = this.element.querySelectorAll("path[id],circle[id]");
+
+    // Color each state
+    for (let state of this.states) {
+      // Define color
+      let color = this.color.d3.interpolateYlGn(Math.random());
+
+      // Apply color to element
+      state.style.fill = color;
+    }
   }
 }
 
