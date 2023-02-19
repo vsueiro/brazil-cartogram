@@ -1,5 +1,7 @@
+import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+
 class Color {
-  constructor(d3) {
+  constructor() {
     this.d3 = d3;
   }
 }

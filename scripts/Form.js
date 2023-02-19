@@ -27,9 +27,11 @@ class Form {
     // Turn form data into object
     let options = Object.fromEntries(formData);
 
+    console.log(options);
+
     // Parse specific properties as numbers or booleans
     const Numbers = [];
-    const Booleans = [];
+    const Booleans = ["invert"];
 
     // For each value in the form
     for (let key in options) {
@@ -46,6 +48,8 @@ class Form {
         }
       }
     }
+
+    console.log(options);
 
     // Return converted object
     return options;

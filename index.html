@@ -32,6 +32,37 @@
         <input type="radio" name="shape" value="elliptical" />
         <span>elliptical</span>
       </label>
+      <br />
+      <label>
+        <span>palette:</span>
+        <select name="palette">
+          <option value="interpolateBuPu" selected>Blue-Purple</option>
+          <option value="interpolateGnBu">Green-Blue</option>
+          <option value="interpolateOrRd">Orange-Red</option>
+          <option value="interpolateRdPu">Red-Purple</option>
+          <option value="interpolateYlGn">Yellow-Green</option>
+        </select>
+      </label>
+      <br />
+      <label>
+        <input type="checkbox" name="invert" />
+        <span>invert colors</span>
+      </label>
+      <br />
+      <label>
+        <span>Coluna com sigla da UF:</span>
+        <select name="id">
+          <option value="UF" selected>UF</option>
+          <option value="Analfabetismo">Analfabetismo</option>
+        </select>
+      </label>
+      <label>
+        <span>Coluna com valor numérico:</span>
+        <select name="value">
+          <option value="UF">UF</option>
+          <option value="Analfabetismo" selected>Analfabetismo</option>
+        </select>
+      </label>
     </form>
 
     <div class="map"></div>
