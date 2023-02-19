@@ -27,8 +27,6 @@ class Form {
     // Turn form data into object
     let options = Object.fromEntries(formData);
 
-    console.log(options);
-
     // Parse specific properties as numbers or booleans
     const Numbers = ["thickness"];
     const Booleans = ["invert", "labels"];
@@ -48,8 +46,6 @@ class Form {
         }
       }
     }
-
-    console.log(options);
 
     // Return converted object
     return options;

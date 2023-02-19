@@ -74,7 +74,6 @@ class Map {
     // If dataset is already loaded
     if (csv === this.currentDataset) {
       // Proceed to loading the blank SVG map template
-      console.log("Proceed to loading the blank SVG map template");
       this.loadMap();
     } else {
       // Wait until csv file is loaded
@@ -85,10 +84,6 @@ class Map {
           value: Number(d[this.options.value]),
         };
       });
-
-      console.log(set);
-
-      console.log(this.options.id, this.options.value);
 
       // Create new instance of Data
       this.data = new Data(set);
