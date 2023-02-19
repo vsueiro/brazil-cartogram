@@ -134,27 +134,17 @@ class Map {
     this.loadDataset();
   }
 
-  draw(template) {
-    // Removes previous map
-    this.element.replaceChildren();
-
-    // Insert SVG into parent element
-    this.element.innerHTML = template;
-
-    // Store each path or circle as a state
-    this.states = this.element.querySelectorAll("path[id],circle[id]");
-
+  paint() {
     // Pick desired scale based on <select>
-    const scale = this.color.d3[this.options.palette];
+    const scale = d3[this.options.palette];
 
     // Get array with min a max values from dataset
     let extent = d3.extent(this.data.set, (d) => d.value);
 
+    // If checkbox for inverting colors is checked
     if (this.options.invert) {
-      console.log("is inverted");
+      // Reverse domain
       extent.reverse();
-    } else {
-      console.log("is not inverted");
     }
 
     // Convert to value from 0 to 1
@@ -173,10 +163,67 @@ class Map {
           const color = scale(normalize(row.value));
 
           // Apply color to element
-          state.style.fill = color;
+          state.setAttribute("fill", color);
         }
       }
     }
+  }
+
+  getCenter(state) {
+    // Find SVG element bounding box
+    const box = state.getBBox();
+
+    // Calculate its geometric center
+    return {
+      x: box.x + box.width / 2,
+      y: box.y + box.height / 2,
+    };
+  }
+
+  label() {
+    // Loop through each state in the map
+    for (let state of this.states) {
+      // Obtain coordinates of its center
+      const { x, y } = this.getCenter(state);
+
+      // Get current fill color of state
+      const color = state.getAttribute("fill");
+
+      // Check if it is a bright or dark color
+      const isLight = this.color.isLight(color);
+
+      // Add text label
+      d3.select("svg")
+        .append("text")
+        .attr("x", x)
+        .attr("y", y)
+        .attr("dy", ".35em")
+        .attr("text-anchor", "middle")
+        .attr("font-family", "sans-serif")
+        .attr("font-size", 24)
+        .attr("fill", isLight ? "black" : "white")
+        .text(state.id);
+    }
+  }
+
+  draw(template) {
+    // Removes previous map
+    this.element.replaceChildren();
+
+    // Insert SVG into parent element
+    this.element.innerHTML = template;
+
+    // Store refence to parsed <svg> element
+    this.svg = this.element.querySelector("svg");
+
+    // Store each path or circle as a state
+    this.states = this.element.querySelectorAll("path[id],circle[id]");
+
+    // Apply colors
+    this.paint();
+
+    // Add state labels
+    this.label();
   }
 }
 
