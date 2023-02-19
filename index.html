@@ -8,8 +8,32 @@
     <script src="scripts/app.js" type="module" defer></script>
   </head>
   <body>
-    <img src="maps/political.svg" />
-    <img src="maps/hexagonal.svg" />
-    <img src="maps/elliptical.svg" />
+    <!--
+      Sources:
+      
+      Sample data:
+      https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_alfabetização
+
+      Political map*:
+      http://www.dpi.inpe.br/Ambdata/unidades_administrativas.php
+      
+      *It was later simplified in Figma to only contain 1 polygon per state (e.g., exclude islands)
+    -->
+    <form class="form">
+      <label>
+        <input type="radio" name="shape" value="political" />
+        <span>political</span>
+      </label>
+      <label>
+        <input type="radio" name="shape" value="hexagonal" checked />
+        <span>hexagonal</span>
+      </label>
+      <label>
+        <input type="radio" name="shape" value="elliptical" />
+        <span>elliptical</span>
+      </label>
+    </form>
+
+    <div class="map"></div>
   </body>
 </html>
