@@ -164,6 +164,9 @@ class Map {
 
           // Apply color to element
           state.setAttribute("fill", color);
+
+          // Apply border thickness
+          state.setAttribute("stroke-width", this.options.thickness);
         }
       }
     }

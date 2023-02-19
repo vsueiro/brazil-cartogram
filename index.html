@@ -20,35 +20,38 @@
       *It was later simplified in Figma to only contain 1 polygon per state (e.g., exclude islands)
     -->
     <form class="form">
+      <fieldset>
+        <legend>Estilo do mapa:</legend>
+        <label>
+          <input type="radio" name="shape" value="political" />
+          <span>Político</span>
+        </label>
+        <label>
+          <input type="radio" name="shape" value="hexagonal" checked />
+          <span>Hexágonos</span>
+        </label>
+        <label>
+          <input type="radio" name="shape" value="elliptical" />
+          <span>Círculos</span>
+        </label>
+      </fieldset>
+
       <label>
-        <input type="radio" name="shape" value="political" />
-        <span>political</span>
-      </label>
-      <label>
-        <input type="radio" name="shape" value="hexagonal" checked />
-        <span>hexagonal</span>
-      </label>
-      <label>
-        <input type="radio" name="shape" value="elliptical" />
-        <span>elliptical</span>
-      </label>
-      <br />
-      <label>
-        <span>palette:</span>
+        <span>Paleta de cores</span>
         <select name="palette">
-          <option value="interpolateBuPu" selected>Blue-Purple</option>
-          <option value="interpolateGnBu">Green-Blue</option>
-          <option value="interpolateOrRd">Orange-Red</option>
-          <option value="interpolateRdPu">Red-Purple</option>
-          <option value="interpolateYlGn">Yellow-Green</option>
+          <option value="interpolateBuPu" selected>Azul-Roxo</option>
+          <option value="interpolateGnBu">Verde-Azul</option>
+          <option value="interpolateOrRd">Laranja-Vermelho</option>
+          <option value="interpolateRdPu">Vermelho-Roxo</option>
+          <option value="interpolateYlGn">Amarelo-Verde</option>
         </select>
       </label>
-      <br />
+
       <label>
-        <input type="checkbox" name="invert" />
-        <span>invert colors</span>
+        <input type="checkbox" name="invert" checked />
+        <span>Inverter cores</span>
       </label>
-      <br />
+
       <label>
         <span>Coluna com sigla da UF:</span>
         <select name="id">
@@ -62,6 +65,10 @@
           <option value="UF">UF</option>
           <option value="Analfabetismo" selected>Analfabetismo</option>
         </select>
+      </label>
+      <label>
+        <span>Espessura das bordas:</span>
+        <input type="range" name="thickness" min="0" max="4" />
       </label>
     </form>
 

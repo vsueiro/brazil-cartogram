@@ -1,0 +1,9 @@
+form > label,
+form > fieldset {
+  display: flex;
+  margin: 8px;
+}
+
+select {
+  margin: 0 8px;
+}

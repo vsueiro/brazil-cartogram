@@ -30,7 +30,7 @@ class Form {
     console.log(options);
 
     // Parse specific properties as numbers or booleans
-    const Numbers = [];
+    const Numbers = ["thickness"];
     const Booleans = ["invert"];
 
     // For each value in the form
