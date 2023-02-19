@@ -20,6 +20,7 @@ class Map {
       value: "value",
       shape: "hexagonal",
       invert: false,
+      labels: false,
     };
 
     // Create options by defaults if custom value was not passed
@@ -184,6 +185,11 @@ class Map {
   }
 
   label() {
+    // If user doesn’t want labels, stop executing
+    if (this.options.labels === false) {
+      return;
+    }
+
     // Loop through each state in the map
     for (let state of this.states) {
       // Obtain coordinates of its center

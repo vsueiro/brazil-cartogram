@@ -31,7 +31,7 @@ class Form {
 
     // Parse specific properties as numbers or booleans
     const Numbers = ["thickness"];
-    const Booleans = ["invert"];
+    const Booleans = ["invert", "labels"];
 
     // For each value in the form
     for (let key in options) {

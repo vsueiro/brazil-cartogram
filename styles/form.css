@@ -2,6 +2,7 @@ form > label,
 form > fieldset {
   display: flex;
   margin: 8px;
+  user-select: none;
 }
 
 select {
