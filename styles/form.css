@@ -5,6 +5,7 @@ form > fieldset {
   user-select: none;
 }
 
-select {
+select,
+input[type="file"] {
   margin: 0 8px;
 }

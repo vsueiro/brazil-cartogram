@@ -15,9 +15,9 @@ class Map {
 
     // Define default values
     this.defaults = {
-      dataset: "data/sample.csv",
-      id: "id",
-      value: "value",
+      sample: "sample.csv",
+      id: "UF",
+      value: "Analfabetismo",
       shape: "hexagonal",
       invert: false,
       labels: false,
@@ -68,16 +68,10 @@ class Map {
   }
 
   async loadDataset() {
-    // Get path to dataset
-    const csv = this.options.dataset;
-
-    // If dataset is already loaded
-    if (csv === this.currentDataset) {
-      // Proceed to loading the blank SVG map template
-      this.loadMap();
-    } else {
-      // Wait until csv file is loaded
-      const set = await d3.csv(csv, (d) => {
+    // If user has not selected any CSV file to upload
+    if (this.options.dataset.size === 0) {
+      // Wait until default CSV file is loaded
+      const set = await d3.csv("data/" + this.options.sample, (d) => {
         // Convert values from text to number
         return {
           id: d[this.options.id],
@@ -89,10 +83,64 @@ class Map {
       this.data = new Data(set);
 
       // Keep track of most recently loaded dataset
-      this.currentDataset = csv;
+      this.currentCSV = this.options.sample;
 
       // Proceed to loading the blank SVG map template
       this.loadMap();
+    }
+    // Otherwise, load custom CSV file
+    else {
+      // Prepare to read the local file
+      const reader = new FileReader();
+
+      // Define what to do once file is loaded
+      reader.addEventListener("load", (event) => {
+        // Get file contents as a string
+        const string = event.target.result;
+
+        // Parse it as a CSV
+        const parsed = d3.csvParse(string);
+
+        console.log(parsed, typeof parsed, parsed.columns);
+
+        // Create empty array, to be filled below
+        let cleanSet = [];
+
+        // Only keep the first 2 columns, while renaming them to “id” and “value”
+        for (let row of parsed) {
+          const firstColumn = parsed.columns[0];
+          const secondColumn = parsed.columns[1];
+
+          let id = row[firstColumn];
+          let value = row[secondColumn];
+
+          // If value is a string
+          if (typeof value === "string") {
+            // Remove spaces
+            value = value.replace(/\s/g, "");
+          }
+
+          // Convert it to a number
+          value = Number(value);
+
+          // Add object to the clean array
+          cleanSet.push({ id, value });
+        }
+
+        // Create new instance of Data
+        this.data = new Data(cleanSet);
+
+        // Keep track of most recently loaded dataset
+        this.currentCSV = this.options.dataset.name;
+
+        console.log(this);
+
+        // Proceed to loading the blank SVG map template
+        this.loadMap();
+      });
+
+      // Actually begin loading the file
+      reader.readAsText(this.options.dataset);
     }
   }
 
@@ -126,7 +174,7 @@ class Map {
     // Updates current options with new values passed
     this.options = Object.assign({}, this.defaults, options);
 
-    // Load new data (or use existing one)
+    // Load data uploaded by user (or use sample dataset)
     this.loadDataset();
   }
 

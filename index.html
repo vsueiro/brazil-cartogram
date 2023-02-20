@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,49 @@
       
       *It was later simplified in Figma to only contain 1 polygon per state (e.g., exclude islands)
     -->
+    <h1>Gerador de Cartograma para o Brasil</h1>
+
     <form class="form">
+      <label>
+        <span>Importe planilha (CSV): </span>
+        <input type="file" name="dataset" accept=".csv, .tsv" />
+      </label>
+
+      <h2>Como formatar seu arquivo CSV:</h2>
+
+      <a href="data/sample.csv" download="exemplo.csv">Baixar exemplo</a>
+
+      <ul>
+        <li>
+          No total, o arquivo CSV deve ter 27 linhas (com exceção do cabeçalho).
+        </li>
+        <li>
+          Apenas as 2 primeiras colunas do arquivo CSV serão consideradas:
+        </li>
+        <li>
+          A 1ª coluna deve conter:
+          <ul>
+            <li>
+              A sigla da unidade federativa (SP, BA, PR, GO, AM, DF, etc); ou
+            </li>
+            <li>
+              O nome do unidade federativa (São Paulo, Bahia, Paraná, Goiás,
+              Amazonas, Distrito Federal, etc)
+            </li>
+          </ul>
+        </li>
+        <li>
+          A 2ª coluna deve conter o valor numérico a ser representado no mapa.
+          Por exemplo:
+          <ul>
+            <li>
+              Ao invés de <code>R$ 1.234,56</code>, use <code>1234.56</code>
+            </li>
+            <li>Ao invés de <code>12,34 %</code>, use <code>12.34</code></li>
+          </ul>
+        </li>
+      </ul>
+
       <fieldset>
         <legend>Estilo do mapa:</legend>
         <label>
@@ -55,7 +97,7 @@
         <input type="checkbox" name="labels" checked />
         <span>Mostrar siglas</span>
       </label>
-
+      <!--
       <label>
         <span>Coluna com sigla da UF:</span>
         <select name="id">
@@ -70,6 +112,7 @@
           <option value="Analfabetismo" selected>Analfabetismo</option>
         </select>
       </label>
+      -->
       <label>
         <span>Espessura das bordas:</span>
         <input type="range" name="thickness" min="0" max="4" />
